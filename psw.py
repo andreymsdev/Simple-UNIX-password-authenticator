@@ -1,7 +1,6 @@
 import pwd 
 import getpass
 import sys
-# Não precisamos de 'crypt' nem 'hmac' mais
 from passlib.hash import sha512_crypt, md5_crypt, des_crypt
 
 # Mapeia os identificadores de hash do Unix para os formatos do passlib
@@ -33,15 +32,13 @@ def login():
             if hash_alg.verify(cleartext_password, stored_hash):
                 return True
         except Exception:
-            # Fallback for complex hash types or errors in parsing
-            # passlib can verify most hashes just using a generic call:
             from passlib.hash import sun_md5
             if sun_md5.verify(cleartext_password, stored_hash):
                 return True
             print("Could not verify password with passlib formats.")
             return False
 
-        return False # Fallback if verification fails
+        return False 
 
     except KeyError:
         print('User not found.')
@@ -53,7 +50,7 @@ def login():
         print(f"An unexpected error occurred: {e}")
         return False
 
-# Main execution block
+
 if login():
     print('Login successful!')
 else:
