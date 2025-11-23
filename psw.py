@@ -25,7 +25,7 @@ def login():
         cleartext_password = getpass.getpass('Enter your password: ')
         
         # passlib verifica automaticamente o formato e o sal a partir do hash armazenado
-        # Usamos .verify() que lida com a lógica de comparação e hashing internamente
+        # .verify() que lida com a lógica de comparação e hashing internamente
         # Usamos try/except para lidar com hashes inválidos que passlib pode rejeitar
         try:
             hash_alg = HASH_MAP.get(stored_hash.split('$')[1][0], des_crypt)
