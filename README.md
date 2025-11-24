@@ -4,7 +4,7 @@
 
 This Python script demonstrates how to authenticate users on a Unix-based operating system (such as Linux or macOS) by verifying the password provided by the user against the hash stored in the system.
 
-! **Disclaimer:** This is an educational script used in CTFs (Capture The Flag challenges). It accesses system authentication information and must be used with caution. Execution usually requires `root` privileges (using `sudo`) if your system uses shadow passwords (`/etc/shadow`). 
+**Disclaimer:** This is an educational script used in CTFs (Capture The Flag challenges). It accesses system authentication information and must be used with caution. Execution usually requires `root` privileges (using `sudo`) if your system uses shadow passwords (`/etc/shadow`). 
 
 ---
 
