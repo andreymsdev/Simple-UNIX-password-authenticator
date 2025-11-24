@@ -4,7 +4,7 @@
 
 Este script Python demonstra como autenticar usuários em um sistema operacional baseado em Unix (como Linux ou macOS) verificando a senha fornecida pelo usuário contra o hash armazenado no sistema.
 
-!!!Este é um script educacional utilizados em CTFs. Ele acessa informações de autenticação do sistema e deve ser usado com cautela. A execução geralmente requer privilégios de `root` (usando `sudo`) se o seu sistema usa senhas shadow (`/etc/shadow`).!!!
+!Este é um script educacional utilizados em CTFs. Ele acessa informações de autenticação do sistema e deve ser usado com cautela. A execução geralmente requer privilégios de `root` (usando `sudo`) se o seu sistema usa senhas shadow (`/etc/shadow`).
 
 ---
 
